@@ -1,4 +1,4 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![linting examples](https://github.com/brendanmorrell/styled-components-a11y-example/blob/master/example.png)
 
 ## Available Scripts
 
