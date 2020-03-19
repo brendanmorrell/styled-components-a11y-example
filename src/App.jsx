@@ -22,6 +22,14 @@ const DivAttrsNoError = () => <DivAttrsNoError />;
 const DivOnClickAttrs = styled.div.attrs({ onClick: () => 0 })``;
 const DivOnClickAttrsError = () => <DivOnClickAttrs />;
 
+// extending existing components maintains the prop/attributes
+// Note: must use function form (not .extend)
+const StyledDiv = styled(Div)``;
+const StyledDivNoError = () => <StyledDiv />;
+
+const StyledDivOnClickAttrs = styled(DivOnClickAttrs)``;
+const StyledDivOnClickAttrsError = <StyledDivOnClickAttrs />;
+
 // buttons can have click handlers (aria label added to silence 'control-has-associated-label'error.
 // it is kept on bottom example just to show it is not the source of the error when using as="div")
 const ButtonOnClickAttrs = styled.button.attrs({ onClick: () => 0, 'aria-label': 'Save' })``;
@@ -33,6 +41,9 @@ const ButtonOnClickAttrsAsDivError = () => <ButtonOnClickAttrsAsDiv as="div" />;
 export default {
   DivNoError,
   DivError,
+  StyledDivNoError,
+  StyledDivOnClickAttrsError,
+  StyledDiv,
   DivAttrs,
   DivOnClickAttrsError,
   ButtonOnClickAttrsNoError,
