@@ -1,6 +1,6 @@
 ![linting examples](https://github.com/brendanmorrell/styled-components-a11y-example/blob/master/example.png)
 
-## Available Scripts
+## Eslint Plugin Styled Components A11y
 
 This is the minimal configuration necessary to activate linting of styled components with eslint-plugin-styled-components-a11y
 
