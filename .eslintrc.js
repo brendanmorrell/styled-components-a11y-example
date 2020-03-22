@@ -37,4 +37,4 @@ module.exports = {
     'styled-components-a11y/no-noninteractive-element-interactions': 'warn',
     'styled-components-a11y/scope': 'warn',
   },
-}
+};
