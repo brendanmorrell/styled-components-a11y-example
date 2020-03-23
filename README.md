@@ -4,9 +4,9 @@
 
 This is the minimal configuration necessary to activate linting of styled components with eslint-plugin-styled-components-a11y
 
-- run 'yarn' or 'npm i' to install all the dependencies
+- Run 'yarn' or 'npm i' to install all the dependencies
 
-- from there, using styled components should run all of the currently configured jsx-a11y rules on styled components when linting
+- From there, using styled components should run all of the currently configured jsx-a11y rules on styled components when linting
 
 ## IMPORTANT
 
@@ -24,7 +24,7 @@ Add styled-components-a11y to the plugins section of your .eslintrc configuratio
 }
 ```
 
-You enable the recommeded rules or strict rules. Add `plugin:styled-components-a11y/recommended` or `plugin:styled-components-a11y/`strict in extends:
+Enable the recommeded ruleset or the strict ruleset. Add `plugin:styled-components-a11y/recommended` or `plugin:styled-components-a11y/strict` in extends:
 
 ```
 {
