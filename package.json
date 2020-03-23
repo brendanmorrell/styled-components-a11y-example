@@ -5,5 +5,9 @@
   "devDependencies": {
     "eslint-plugin-styled-components": "^0.0.0",
     "eslint-plugin-styled-components-a11y": "0.0.7"
+  },
+  "dependencies": {
+    "react": "^16.13.1",
+    "styled-components": "^5.0.1"
   }
 }
