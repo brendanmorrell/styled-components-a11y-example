@@ -11,7 +11,37 @@ This is the minimal configuration necessary to activate linting of styled compon
 ## IMPORTANT
 
 This library is currently a work in progress. At the moment, some of the rules do not fire in all cases, and there is some debugging and testing still to be done.
-Also, as the library is not fully packaged and prod ready, you currently have to manually enable each rule in the .eslintrc.js file (as shown in this example repo). withoiut this, none of the rules will fire. I will post updates to this as I make progress on the project.
+
+## Usage
+
+Add styled-components-a11y to the plugins section of your .eslintrc configuration file. You can omit the eslint-plugin- prefix:
+
+```
+{
+  "plugins": [
+    "styled-components-a11y"
+  ]
+}
+```
+
+You enable the recommeded rules or strict rules. Add `plugin:styled-components-a11y/recommended` or `plugin:styled-components-a11y/`strict in extends:
+
+```
+{
+  "extends": [
+    "plugin:styled-components-a11y/recommended"
+  ]
+}
+Alternatively, you can configure individual rules under the rules section.
+```
+
+```
+{
+  "rules": {
+  "styled-components-a11y/rule-name": 2
+  }
+}
+```
 
 ## Contributing
 
